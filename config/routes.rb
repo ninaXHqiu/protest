@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  get 'page/home'
+  get 'index' => 'page#home'
 
-  get 'page/search'
+  get 'search' => 'page#search'
 
-  get 'page/about'
+  # get 'page/about'
 
-  get 'page/contact'
+  # get 'page/contact'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
