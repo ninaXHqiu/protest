@@ -3,6 +3,11 @@ Rails.application.routes.draw do
 
   get 'search' => 'page#search'
 
+  get 'show'  => 'page#show'
+  
+  get 'user/:id' => 'page#view', as: 'profile'  #individual users
+  
+  get 'user/:id/edit' => 'page#edit'
   # get 'page/about'
 
   # get 'page/contact'
